@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Skin Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: radial-gradient(circle at top, #1f2937 0%, #0f172a 35%, #020617 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen overflow-x-hidden text-slate-100 antialiased">
+    <header class="sticky top-0 z-20 border-b border-yellow-500/20 bg-slate-950/80 backdrop-blur-md">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-3 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+            <div class="flex items-center gap-3">
+                <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-yellow-400 to-orange-500 text-sm font-black text-slate-900 shadow-lg shadow-yellow-500/30 sm:h-10 sm:w-10">ML</div>
+                <div class="min-w-0">
+                    <p class="text-[9px] font-semibold uppercase tracking-[0.25em] text-yellow-400 sm:text-[10px]">Marketplace</p>
+                    <h1 class="truncate text-sm font-black tracking-wider text-white sm:text-lg">MLBB SKIN STORE</h1>
+                </div>
+            </div>
+
+            {% if session.get('username') %}
+                <div class="flex items-center justify-between gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-2.5 py-2 shadow-lg shadow-slate-950/40 sm:gap-3 sm:px-3">
+                    <span class="text-[11px] text-slate-300 sm:text-sm">Halo, <strong class="text-white">{{ session['username'] }}</strong></span>
+                    <a href="/logout" class="rounded-full bg-red-500 px-2.5 py-1.5 text-[10px] font-semibold text-white transition hover:bg-red-400 sm:px-3 sm:text-xs">Logout</a>
+                </div>
+            {% endif %}
+        </div>
+    </header>
+
+    <main class="mx-auto flex max-w-6xl flex-1 items-center justify-center px-3 py-6 sm:px-6 lg:px-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950/70 px-4 py-4 text-center text-xs text-slate-400">
+        &copy; 2026 MLBB Skin Store. All Rights Reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="w-full max-w-7xl">
+    <div class="mb-6 text-center sm:mb-8">
+        <p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-yellow-400 sm:text-xs">Koleksi Premium</p>
+        <h2 class="mt-3 text-2xl font-black text-white sm:text-3xl lg:text-4xl">Pilih Hero Mobile Legend Favoritmu</h2>
+    </div>
+
+    <div class="grid gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <article class="flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 shadow-2xl shadow-slate-950/30">
+            <img src="{{ url_for('static', filename='Aamon - Soul-Reaver.jpg') }}" alt="Aamon - Soul-Reaver" class="h-44 w-full object-cover sm:h-52">
+            <div class="flex flex-1 flex-col p-4 sm:p-6">
+                <div class="mb-3 flex items-center justify-between">
+                    <span class="rounded-full bg-yellow-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-300">collector</span>
+                    <span class="text-xs font-medium text-slate-400">Limited</span>
+                </div>
+                <h3 class="text-xl font-black text-white sm:text-2xl">Aamon - Soul-Reaver</h3>
+                <p class="mt-3 text-xl font-black text-yellow-400 sm:text-2xl">FREE</p>
+                <a href="/checkout?skin=Aamon - Soul-Reaver" class="mt-5 block w-full rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-3 text-center text-sm font-black text-slate-900 transition hover:brightness-110 sm:mt-6 sm:text-base">Checkout</a>
+            </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 shadow-2xl shadow-slate-950/30">
+            <img src="{{ url_for('static', filename='Alice - Dreaming-Monarch.jpg') }}" alt="Alice - Dreaming-Monarch" class="h-44 w-full object-cover sm:h-52">
+            <div class="flex flex-1 flex-col p-4 sm:p-6">
+                <div class="mb-3 flex items-center justify-between">
+                    <span class="rounded-full bg-yellow-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-300">collector</span>
+                    <span class="text-xs font-medium text-slate-400">Best Seller</span>
+                </div>
+                <h3 class="text-xl font-black text-white sm:text-2xl">Alice - Dreaming-Monarch</h3>
+                <p class="mt-3 text-xl font-black text-yellow-400 sm:text-2xl">FREE</p>
+                <a href="/checkout?skin=Alice - Dreaming-Monarch" class="mt-5 block w-full rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-3 text-center text-sm font-black text-slate-900 transition hover:brightness-110 sm:mt-6 sm:text-base">Checkout</a>
+            </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 shadow-2xl shadow-slate-950/30">
+            <img src="{{ url_for('static', filename='Atlas - Mecha-Infernus.jpg') }}" alt="Atlas - Mecha-Infernus" class="h-44 w-full object-cover sm:h-52">
+            <div class="flex flex-1 flex-col p-4 sm:p-6">
+                <div class="mb-3 flex items-center justify-between">
+                    <span class="rounded-full bg-yellow-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-300">collector</span>
+                    <span class="text-xs font-medium text-slate-400">Popular</span>
+                </div>
+                <h3 class="text-xl font-black text-white sm:text-2xl">Atlas - Mecha-Infernus</h3>
+                <p class="mt-3 text-xl font-black text-yellow-400 sm:text-2xl">FREE</p>
+                <a href="/checkout?skin=Atlas - Mecha-Infernus" class="mt-5 block w-full rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-3 text-center text-sm font-black text-slate-900 transition hover:brightness-110 sm:mt-6 sm:text-base">Checkout</a>
+            </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 shadow-2xl shadow-slate-950/30">
+            <img src="{{ url_for('static', filename='Balmond - Vulcan Lionheart.jpg') }}" alt="Balmond - Vulcan Lionheart" class="h-44 w-full object-cover sm:h-52">
+            <div class="flex flex-1 flex-col p-4 sm:p-6">
+                <div class="mb-3 flex items-center justify-between">
+                    <span class="rounded-full bg-yellow-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-300">collector</span>
+                    <span class="text-xs font-medium text-slate-400">Rare</span>
+                </div>
+                <h3 class="text-xl font-black text-white sm:text-2xl">Balmond - Vulcan Lionheart</h3>
+                <p class="mt-3 text-xl font-black text-yellow-400 sm:text-2xl">FREE</p>
+                <a href="/checkout?skin=Balmond - Vulcan Lionheart" class="mt-5 block w-full rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-3 text-center text-sm font-black text-slate-900 transition hover:brightness-110 sm:mt-6 sm:text-base">Checkout</a>
+            </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 shadow-2xl shadow-slate-950/30">
+            <img src="{{ url_for('static', filename='Helcurt - Kaijuofthedeeph.jpg') }}" alt="Helcurt - Kaijuofthedeeph" class="h-44 w-full object-cover sm:h-52">
+            <div class="flex flex-1 flex-col p-4 sm:p-6">
+                <div class="mb-3 flex items-center justify-between">
+                    <span class="rounded-full bg-yellow-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-300">collector</span>
+                    <span class="text-xs font-medium text-slate-400">New</span>
+                </div>
+                <h3 class="text-xl font-black text-white sm:text-2xl">Helcurt - Kaijuofthedeeph</h3>
+                <p class="mt-3 text-xl font-black text-yellow-400 sm:text-2xl">FREE</p>
+                <a href="/checkout?skin=Helcurt - Kaijuofthedeeph" class="mt-5 block w-full rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-3 text-center text-sm font-black text-slate-900 transition hover:brightness-110 sm:mt-6 sm:text-base">Checkout</a>
+            </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 shadow-2xl shadow-slate-950/30">
+            <img src="{{ url_for('static', filename='Kimmy - Starbound-Sentry.jpg') }}" alt="Kimmy - Starbound-Sentry" class="h-44 w-full object-cover sm:h-52">
+            <div class="flex flex-1 flex-col p-4 sm:p-6">
+                <div class="mb-3 flex items-center justify-between">
+                    <span class="rounded-full bg-yellow-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-300">collector</span>
+                    <span class="text-xs font-medium text-slate-400">Classic</span>
+                </div>
+                <h3 class="text-xl font-black text-white sm:text-2xl">Kimmy - Starbound-Sentry</h3>
+                <p class="mt-3 text-xl font-black text-yellow-400 sm:text-2xl">FREE</p>
+                <a href="/checkout?skin=Kimmy - Starbound-Sentry" class="mt-5 block w-full rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-3 text-center text-sm font-black text-slate-900 transition hover:brightness-110 sm:mt-6 sm:text-base">Checkout</a>
+            </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 shadow-2xl shadow-slate-950/30">
+            <img src="{{ url_for('static', filename='Paquito - Blazing-Tiger.jpg') }}" alt="Paquito - Blazing-Tiger" class="h-44 w-full object-cover sm:h-52">
+            <div class="flex flex-1 flex-col p-4 sm:p-6">
+                <div class="mb-3 flex items-center justify-between">
+                    <span class="rounded-full bg-yellow-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-300">collector</span>
+                    <span class="text-xs font-medium text-slate-400">Classic</span>
+                </div>
+                <h3 class="text-xl font-black text-white sm:text-2xl">Paquito - Blazing-Tiger</h3>
+                <p class="mt-3 text-xl font-black text-yellow-400 sm:text-2xl">FREE</p>
+                <a href="/checkout?skin=Paquito - Blazing-Tiger" class="mt-5 block w-full rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-3 text-center text-sm font-black text-slate-900 transition hover:brightness-110 sm:mt-6 sm:text-base">Checkout</a>
+            </div>
+        </article>
+
+        <article class="flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 shadow-2xl shadow-slate-950/30">
+            <img src="{{ url_for('static', filename='Yi-Sun-shin - Lone-Destructor.jpg') }}" alt="Yi-Sun-shin - Lone-Destructor" class="h-44 w-full object-cover sm:h-52">
+            <div class="flex flex-1 flex-col p-4 sm:p-6">
+                <div class="mb-3 flex items-center justify-between">
+                    <span class="rounded-full bg-yellow-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-300">collector
+                    </span>
+                    <span class="text-xs font-medium text-slate-400">Classic</span>
+                </div>
+                <h3 class="text-xl font-black text-white sm:text-2xl">Yi-Sun-shin - Lone-Destructor</h3>
+                <p class="mt-3 text-xl font-black text-yellow-400 sm:text-2xl">FREE</p>
+                <a href="/checkout?skin=Yi-Sun-shin - Lone-Destructor" class="mt-5 block w-full rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-3 text-center text-sm font-black text-slate-900 transition hover:brightness-110 sm:mt-6 sm:text-base">Checkout</a>
+            </div>
+        </article>
+    </div>
+</div>
+{% endblock %}

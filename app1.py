@@ -5,7 +5,7 @@ from flask import Flask, request, render_template, redirect, url_for, session
 app = Flask(__name__, static_folder='templates/images', static_url_path='/images')
 app.secret_key = 'rahasia_super_aman'
 
-DATABASE = 'database.db'
+DATABASE = 'pengguna.db'
 
 
 def init_db():
